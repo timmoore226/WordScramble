@@ -13,6 +13,7 @@
 		F543A7FD24B3F58B00D42E72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F543A7FC24B3F58B00D42E72 /* Assets.xcassets */; };
 		F543A80024B3F58B00D42E72 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F543A7FF24B3F58B00D42E72 /* Preview Assets.xcassets */; };
 		F543A80324B3F58B00D42E72 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F543A80124B3F58B00D42E72 /* LaunchScreen.storyboard */; };
+		F543A80B24B559A700D42E72 /* start.txt in Resources */ = {isa = PBXBuildFile; fileRef = F543A80A24B559A600D42E72 /* start.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		F543A7FF24B3F58B00D42E72 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F543A80224B3F58B00D42E72 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F543A80424B3F58B00D42E72 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F543A80A24B559A600D42E72 /* start.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = start.txt; path = "../../../../../../../Desktop/HackingWithSwift-main/SwiftUI/project5-files/start.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				F543A7FC24B3F58B00D42E72 /* Assets.xcassets */,
 				F543A80124B3F58B00D42E72 /* LaunchScreen.storyboard */,
 				F543A80424B3F58B00D42E72 /* Info.plist */,
+				F543A80A24B559A600D42E72 /* start.txt */,
 				F543A7FE24B3F58B00D42E72 /* Preview Content */,
 			);
 			path = WordScramble;
@@ -134,6 +137,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F543A80324B3F58B00D42E72 /* LaunchScreen.storyboard in Resources */,
+				F543A80B24B559A700D42E72 /* start.txt in Resources */,
 				F543A80024B3F58B00D42E72 /* Preview Assets.xcassets in Resources */,
 				F543A7FD24B3F58B00D42E72 /* Assets.xcassets in Resources */,
 			);
