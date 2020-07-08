@@ -20,6 +20,9 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+                Button("Restart Game") {
+                    self.startGame()
+                }
                 TextField("Enter your word", text: $newWord, onCommit: addNewWord)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding()
@@ -63,6 +66,9 @@ struct ContentView: View {
     }
     
     func startGame() {
+        // clear used word list
+        usedWords.removeAll()
+        
         // find the url for start.txt in our bundle
         if let startWordsUrl = Bundle.main.url(forResource: "start", withExtension: "txt") {
             // load start.txt into a string
@@ -82,7 +88,7 @@ struct ContentView: View {
     }
     
     func isOriginal(word: String) -> Bool {
-        !usedWords.contains(word)
+        !usedWords.contains(word) && !word.contains(rootWord)
     }
     
     func isPossible(word: String) -> Bool {
@@ -98,6 +104,10 @@ struct ContentView: View {
     }
     
     func isReal(word: String) -> Bool {
+        if word.count < 3 {
+            return false
+        }
+        
         let checker = UITextChecker()
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
